@@ -13,7 +13,11 @@ async function createVideo() {
         duration: 3,
         layers: [
           { type: "image", path: el.thumbnail },
-          { type: "news-title", text: el.title },
+          {
+            type: "news-title",
+            text: el.title,
+            backgroundColor: "rgba(0,0,0,0.5)",
+          },
           {
             type: "subtitle",
             text: el.description,
